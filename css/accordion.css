@@ -1,0 +1,110 @@
+
+
+#my-accordion{
+    width: 800px;
+    margin: 30px auto;
+}
+
+#my-accordion .title{
+    height: 60px;
+    background-color: white;
+    padding: 20px 25px;
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #e4e6e5;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2)
+}
+
+
+
+.oneTitle{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    overflow: hidden;
+    /* Items Divider Line */
+    border: 1px solid #e4e6e5;
+    transition: 0.5s;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2)
+    
+}
+
+.oneTitle.active {
+    height: 180px;
+    transition: 0.5s;
+    margin: 30px 0;
+}
+
+.oneTitle:last-child{
+    height: 60px;
+}
+
+.my-title-sottotitle{
+    position: relative;
+}
+
+.my-title-sottotitle::before{
+    content: 'v';
+    font-weight: bold;
+    color: #0465ac;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+}
+
+.oneTitle.active .my-title-sottotitle::before{
+    content: '^';
+    color: #0465ac;
+    font-size: 20px;
+}
+
+/* Title and Subtitle */
+.my-title-sottotitle .myCase{
+    padding-left: 25px;
+}
+
+
+
+/* Item title */
+.my-title{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0465ac;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+/* Item desc */
+.my-sottotitle{
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+}
+
+/* Content */
+.text{
+    font-size: 13px;
+    /* font-style: ; */
+    color: #333;
+    padding: 25px;
+}
+
+/* Arrow Icon */
+.myArrow{
+    /* display: inline-block; */
+    font-size: 26px;
+    color: #0465ac;
+    margin: 0 25px;
+    cursor: pointer;
+    
+}
+
+/* .myArrow{
+    transform: rotate(180deg);
+} */
+
+.none{
+    display: none;
+}

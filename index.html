@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accordion demo page</title>
+</head>
+<body>
+    
+    <h1>Accordion demo page</h1>
+    <div id="my-accordion">
+
+        <div class="title">Main Accordion Title</div>
+    
+    </div>
+
+
+    <script type="text/javascript">
+        let options = {
+            container: 'my-accordion',
+            mainTitle: 'Main accordion title',
+            panels: [{
+                title: 'My profile',
+                subtitle: 'Change your profile information,email and other personal details',
+                content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi vero ipsum quia aperiam tempora, temporibus consectetur dicta officiis rerum aliquam nostrum. Ea laudantium quaerat ex dolor neque asperiores culpa saepe tenetur nostrum, officia molestiae doloremque voluptas, odit ad, esse provident ab quo! Commodi '
+                },
+                {
+                title: 'Change Password',
+                subtitle: 'Change your password to access the LMS',
+                content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi vero ipsum quia aperiam tempora, temporibus consectetur dicta officiis rerum aliquam nostrum. Ea laudantium quaerat ex dolor neque asperiores culpa saepe tenetur nostrum, officia molestiae doloremque voluptas, odit ad, esse provident ab quo! Commodi veniam illum mollitia voluptates fugit blanditiis voluptatem delectus optio libero, inventore adipisci dicta sequi assumenda nobis?'
+                },
+                {
+                title: 'Preferences',
+                subtitle: 'Set your language and timezone preferences',
+                content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quo recusandae harum veritatis omnis quis voluptatem laborum. Sapiente quos deserunt numquam repellendus minus tempora omnis dolore nesciunt voluptates fugit blanditiis voluptatem delectus optio libero, inventore adipisci dicta sequi assumenda nobis?'
+                },
+                {
+                    title: 'No description title'
+                }
+
+                
+            ]
+        };
+
+        // let accordion = new Accordion(options);
+
+        
+
+
+
+    </script>
+
+
+    <script src="js/accordion.js"></script>
+
+</body>
+</html>
