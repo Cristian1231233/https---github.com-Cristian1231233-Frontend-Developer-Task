@@ -10,7 +10,7 @@ for(let i = 0; i < options.panels.length; i++){
 
     html += 
     `
-    <div class="oneTitle">
+    <div class="item">
     <div class="my-title-sottotitle">
         <div class="myCase">
             <div class="my-title">${options.panels[i].title}</div>
@@ -29,14 +29,14 @@ for(let i = 0; i < options.panels.length; i++){
 
 div.innerHTML += html;
 
-const oneTitle = document.getElementsByClassName('oneTitle');
-console.log(oneTitle);
+const item = document.getElementsByClassName('item');
+console.log(item);
 
 const text = document.querySelector('.text');    
 
 
-for(let i = 0; i < oneTitle.length; i++){
-    oneTitle[i].addEventListener('click', function(){
+for(let i = 0; i < item.length; i++){
+    item[i].addEventListener('click', function(){
         this.classList.toggle('active');
     });
 }
