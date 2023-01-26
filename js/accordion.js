@@ -2,9 +2,10 @@
 
 let html = ''; 
 
+// Prendo il container in cui vado a stampare gli item
 const div = document.getElementById('my-accordion');
 
-
+// Ciclo l'item inserendo le informazioni dell'oggetto dato
 for(let i = 0; i < options.panels.length; i++){
 
 
@@ -26,15 +27,15 @@ for(let i = 0; i < options.panels.length; i++){
 
 }
 
-
+// Stampo nel container ogni item che viene ciclato
 div.innerHTML += html;
 
+// Creo un array di item
 const item = document.getElementsByClassName('item');
 console.log(item);
+   
 
-const text = document.querySelector('.text');    
-
-
+// Ciclo l'array di item dando ad ognuno l'evento click
 for(let i = 0; i < item.length; i++){
     item[i].addEventListener('click', function(){
         this.classList.toggle('active');
